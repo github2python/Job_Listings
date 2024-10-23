@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Find Your Dream Job</h1>
+      <div class="filters">
+        <div class="filter">
+          <label for="work-type">Job Type:</label>
+          <select id="work-type">
+            <option value="All">All</option>
+            <option value="Full-Time">Full-time</option>
+            <option value="Part-Time">Part-time</option>
+            <option value="Intern">Intern</option>
+            <option value="Contract">Contract</option>
+            <option value="Temporary">Temporary</option>
+          </select>
+        </div>
+
+        <div class="filter">
+          <label for="search-title">Job Title:</label>
+          <input type="text" id="search-title" placeholder="Enter job title" />
+        </div>
+
+        <div class="filter">
+          <label for="sort-date">Sort By Date:</label>
+          <select id="sort-date">
+            <option value="newest">Newest to Oldest</option>
+            <option value="oldest">Oldest to Newest</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section id="job-listings">
+      <!-- Job listings will be dynamically inserted here -->
+    </section>
+
+    <div id="pagination">
+      <!-- Pagination controls -->
+      <button id="prev" class="pagination-btn" disabled>Prev</button>
+      <span id="page-indicator">Page 1 of X</span>
+      <button id="next" class="pagination-btn">Next</button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
