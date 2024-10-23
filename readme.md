@@ -7,8 +7,6 @@ A simple job listings application that allows users to filter, search, and pagin
 - [Prerequisites](#prerequisites)
 - [How to Run the Page Locally](#how-to-run-the-page-locally)
 - [External Libraries and Frameworks](#external-libraries-and-frameworks)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
